@@ -1,0 +1,52 @@
+﻿<Window x:Class="anbardari.windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:anbardari.windows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Ribbon>
+            <Ribbon.QuickAccessToolBar>
+                <RibbonQuickAccessToolBar>
+                    <RibbonSplitButton SmallImageSource="/img/advanced.png">
+                        <RibbonSplitMenuItem Header="About Us" ImageSource="/img/12.png"/>
+                        <RibbonSplitMenuItem Header="Contact Us" ImageSource="/img/13.png"/>
+                        <RibbonSplitMenuItem Header="Exit" ImageSource="/img/exit.png"/>
+                    </RibbonSplitButton>
+                </RibbonQuickAccessToolBar>
+            </Ribbon.QuickAccessToolBar>
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu>
+                    <RibbonApplicationMenuItem Header="Create User" ImageSource="/img/44.png"/>
+                    <RibbonApplicationMenuItem Header="User Access" ImageSource="/img/advanced.png"/>
+                    <RibbonApplicationMenuItem Header="Change Password" ImageSource="/img/2.png"/>
+                    <RibbonApplicationMenuItem Header="System Components" ImageSource="/img/ajza.png"/>
+                    <RibbonApplicationMenuItem Header="Create Customer" ImageSource="/img/customer.png"/>
+                    <RibbonApplicationMenuItem Header="Backup" ImageSource="/img/server.png"/>
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+
+            <RibbonTab Header="Products">
+                <RibbonGroup>
+                    <RibbonButton Label="Products" LargeImageSource="/img/product2.gif"/>
+                </RibbonGroup>
+                <RibbonGroup Header="Product Section" Margin="0,10,0,10">
+                    <RibbonButton Label="Price" SmallImageSource="/img/13.png"/>
+                    <RibbonButton Label="Supply" SmallImageSource="/img/4.png"/>
+                    <RibbonButton Label="Sale Chart" SmallImageSource="/img/nemudar.png"/>
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab Header="Sale">
+                
+            </RibbonTab>
+            <RibbonTab Header="Warehousing">
+                
+            </RibbonTab>
+            <RibbonTab Header="Reports">
+                
+            </RibbonTab>
+        </Ribbon>
+    </Grid>
+</Window>

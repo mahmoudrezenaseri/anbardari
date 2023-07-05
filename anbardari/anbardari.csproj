@@ -1,0 +1,182 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="img\12.png" />
+		<None Remove="img\13.png" />
+		<None Remove="img\1cover.jpg" />
+		<None Remove="img\2.png" />
+		<None Remove="img\21.png" />
+		<None Remove="img\2cover.jpg" />
+		<None Remove="img\3cover.jpg" />
+		<None Remove="img\4.png" />
+		<None Remove="img\44.png" />
+		<None Remove="img\57.jpg" />
+		<None Remove="img\9.png" />
+		<None Remove="img\add-icon.png" />
+		<None Remove="img\add.png" />
+		<None Remove="img\advanced.png" />
+		<None Remove="img\ajza.png" />
+		<None Remove="img\b3.png" />
+		<None Remove="img\b4.png" />
+		<None Remove="img\back22.jpg" />
+		<None Remove="img\back23.jpg" />
+		<None Remove="img\backcust.jpg" />
+		<None Remove="img\background.jpg" />
+		<None Remove="img\backGround.png" />
+		<None Remove="img\background1.jpg" />
+		<None Remove="img\background_main.png" />
+		<None Remove="img\Box.png" />
+		<None Remove="img\box_icon.png" />
+		<None Remove="img\button_1.png" />
+		<None Remove="img\clock.ico" />
+		<None Remove="img\colorline.jpg" />
+		<None Remove="img\customer.png" />
+		<None Remove="img\dastresi.png" />
+		<None Remove="img\del.png" />
+		<None Remove="img\edit.png" />
+		<None Remove="img\exit.png" />
+		<None Remove="img\gol.jpg" />
+		<None Remove="img\gol1.jpg" />
+		<None Remove="img\gol2.png" />
+		<None Remove="img\img1.jpg" />
+		<None Remove="img\img2.jpg" />
+		<None Remove="img\img3.jpg" />
+		<None Remove="img\img4.jpg" />
+		<None Remove="img\img5.jpg" />
+		<None Remove="img\img6.jpg" />
+		<None Remove="img\img7.jpg" />
+		<None Remove="img\info.png" />
+		<None Remove="img\inventory.png" />
+		<None Remove="img\invoice.ico" />
+		<None Remove="img\Login-icon.png" />
+		<None Remove="img\Login.jpg" />
+		<None Remove="img\manygol.jpg" />
+		<None Remove="img\money.png" />
+		<None Remove="img\mottakere.png" />
+		<None Remove="img\nemudar.jpg" />
+		<None Remove="img\nemudar.png" />
+		<None Remove="img\no.png" />
+		<None Remove="img\paein.png" />
+		<None Remove="img\price.png" />
+		<None Remove="img\price1.png" />
+		<None Remove="img\product.png" />
+		<None Remove="img\product1.jpg" />
+		<None Remove="img\product2.gif" />
+		<None Remove="img\productdefault.png" />
+		<None Remove="img\report.png" />
+		<None Remove="img\report_rpt.png" />
+		<None Remove="img\search.ico" />
+		<None Remove="img\send.png" />
+		<None Remove="img\server.png" />
+		<None Remove="img\Star.png" />
+		<None Remove="img\stock-market.png" />
+		<None Remove="img\stock.png" />
+		<None Remove="img\title1.jpg" />
+		<None Remove="img\title2.jpg" />
+		<None Remove="img\users.jpg" />
+		<None Remove="img\user_group.png" />
+		<None Remove="img\win_2.png" />
+		<None Remove="Login-icon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="img\12.png" />
+	  <Resource Include="img\13.png" />
+	  <Resource Include="img\1cover.jpg" />
+	  <Resource Include="img\2.png" />
+	  <Resource Include="img\21.png" />
+	  <Resource Include="img\2cover.jpg" />
+	  <Resource Include="img\3cover.jpg" />
+	  <Resource Include="img\4.png" />
+	  <Resource Include="img\44.png" />
+	  <Resource Include="img\57.jpg" />
+	  <Resource Include="img\9.png" />
+	  <Resource Include="img\add-icon.png" />
+	  <Resource Include="img\add.png" />
+	  <Resource Include="img\advanced.png" />
+	  <Resource Include="img\ajza.png" />
+	  <Resource Include="img\b3.png" />
+	  <Resource Include="img\b4.png" />
+	  <Resource Include="img\back22.jpg" />
+	  <Resource Include="img\back23.jpg" />
+	  <Resource Include="img\backcust.jpg" />
+	  <Resource Include="img\background.jpg" />
+	  <Resource Include="img\backGround.png" />
+	  <Resource Include="img\background1.jpg" />
+	  <Resource Include="img\background_main.png" />
+	  <Resource Include="img\Box.png" />
+	  <Resource Include="img\box_icon.png" />
+	  <Resource Include="img\button_1.png" />
+	  <Resource Include="img\clock.ico" />
+	  <Resource Include="img\colorline.jpg" />
+	  <Resource Include="img\customer.png" />
+	  <Resource Include="img\dastresi.png" />
+	  <Resource Include="img\del.png" />
+	  <Resource Include="img\edit.png" />
+	  <Resource Include="img\exit.png" />
+	  <Resource Include="img\gol.jpg" />
+	  <Resource Include="img\gol1.jpg" />
+	  <Resource Include="img\gol2.png" />
+	  <Resource Include="img\img1.jpg" />
+	  <Resource Include="img\img2.jpg" />
+	  <Resource Include="img\img3.jpg" />
+	  <Resource Include="img\img4.jpg" />
+	  <Resource Include="img\img5.jpg" />
+	  <Resource Include="img\img6.jpg" />
+	  <Resource Include="img\img7.jpg" />
+	  <Resource Include="img\info.png" />
+	  <Resource Include="img\inventory.png" />
+	  <Resource Include="img\invoice.ico" />
+	  <Resource Include="img\Login-icon.png" />
+	  <Resource Include="img\Login.jpg" />
+	  <Resource Include="img\manygol.jpg" />
+	  <Resource Include="img\money.png" />
+	  <Resource Include="img\mottakere.png" />
+	  <Resource Include="img\nemudar.jpg" />
+	  <Resource Include="img\nemudar.png" />
+	  <Resource Include="img\no.png" />
+	  <Resource Include="img\paein.png" />
+	  <Resource Include="img\price.png" />
+	  <Resource Include="img\price1.png" />
+	  <Resource Include="img\product.png" />
+	  <Resource Include="img\product1.jpg" />
+	  <Resource Include="img\product2.gif" />
+	  <Resource Include="img\productdefault.png" />
+	  <Resource Include="img\report.png" />
+	  <Resource Include="img\report_rpt.png" />
+	  <Resource Include="img\search.ico" />
+	  <Resource Include="img\send.png" />
+	  <Resource Include="img\server.png" />
+	  <Resource Include="img\Star.png" />
+	  <Resource Include="img\stock-market.png" />
+	  <Resource Include="img\stock.png" />
+	  <Resource Include="img\title1.jpg" />
+	  <Resource Include="img\title2.jpg" />
+	  <Resource Include="img\users.jpg" />
+	  <Resource Include="img\user_group.png" />
+	  <Resource Include="img\win_2.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\anbardari.domain\anbardari.domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Login-icon.png" />
+	</ItemGroup>
+
+</Project>
