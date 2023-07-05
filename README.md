@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # anbardari
 This project is a simple data application that uses WPF, C#, .NET 6, and SQL Server with a code-first approach.
 # Prerequisites
@@ -12,9 +10,7 @@ This project is a simple data application that uses WPF, C#, .NET 6, and SQL Ser
 2. Open the solution file in Visual Studio.
 3. Build the solution to restore NuGet packages.
 4. Open Package Manager Console and run the following command to create the database:
-```json
-Update-Database
-```
+`Update-Database`
 5.  Run the application.
 
 # Technologies Used
