@@ -15,8 +15,8 @@
         <Label Content="Login" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="259,53,0,0" VerticalAlignment="Top" 
             FontFamily="Calibri" FontSize="14"/>
 
-        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Margin="52,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="32" TextChanged="UserName_TextChanged"/>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="52,223,0,0"  Width="142" Height="32"  VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Margin="52,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="27" TextChanged="UserName_TextChanged"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="52,223,0,0"  Width="142" Height="27"  VerticalAlignment="Top"/>
         <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="52,280,0,0" VerticalAlignment="Top" Width="50" Click="btnLogin_Click"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="144,280,0,0" VerticalAlignment="Top" Width="50" Click="btnExit_Click"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="52,197,0,0" VerticalAlignment="Top"/>

@@ -51,8 +51,8 @@ namespace anbardari
 
         private async void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            var users = await _userRepository.GetUsersAsync();
-            MessageBox.Show(users.Count().ToString());
+            //var users = await _userRepository.GetUsersAsync();
+            //MessageBox.Show(users.Count().ToString());
         }
     }
 }

@@ -5,21 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:anbardari.windows"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="1200" Loaded="Window_Loaded" MouseDown="Window_MouseDown" WindowStyle="None">
     <Grid>
         <Ribbon>
             <Ribbon.QuickAccessToolBar>
                 <RibbonQuickAccessToolBar>
                     <RibbonSplitButton SmallImageSource="/img/advanced.png">
-                        <RibbonSplitMenuItem Header="About Us" ImageSource="/img/12.png"/>
-                        <RibbonSplitMenuItem Header="Contact Us" ImageSource="/img/13.png"/>
-                        <RibbonSplitMenuItem Header="Exit" ImageSource="/img/exit.png"/>
+                        <RibbonSplitMenuItem x:Name="Aboutus" Header="About Us" ImageSource="/img/12.png" Click="Aboutus_Click"/>
+                        <RibbonSplitMenuItem x:Name="Contactus" Header="Contact Us" ImageSource="/img/13.png" Click="Contactus_Click"/>
+                        <RibbonSplitMenuItem x:Name="Exit" Header="Exit" ImageSource="/img/exit.png" Click="Exit_Click"/>
                     </RibbonSplitButton>
                 </RibbonQuickAccessToolBar>
             </Ribbon.QuickAccessToolBar>
             <Ribbon.ApplicationMenu>
                 <RibbonApplicationMenu>
-                    <RibbonApplicationMenuItem Header="Create User" ImageSource="/img/44.png"/>
+                    <RibbonApplicationMenuItem Name="CreateUser" Header="Create User" ImageSource="/img/44.png" Click="CreateUser_Click"/>
                     <RibbonApplicationMenuItem Header="User Access" ImageSource="/img/advanced.png"/>
                     <RibbonApplicationMenuItem Header="Change Password" ImageSource="/img/2.png"/>
                     <RibbonApplicationMenuItem Header="System Components" ImageSource="/img/ajza.png"/>
