@@ -20,9 +20,12 @@ namespace anbardari.windows
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private readonly UsersWindows usersWindows;
+
+        public MainWindow(UsersWindows usersWindows)
         {
             InitializeComponent();
+            this.usersWindows = usersWindows;
         }
 
         private void Aboutus_Click(object sender, RoutedEventArgs e)
@@ -55,7 +58,6 @@ namespace anbardari.windows
 
         private void CreateUser_Click(object sender, RoutedEventArgs e)
         {
-            UsersWindows usersWindows = new UsersWindows();
             usersWindows.Show();
         }
     }
