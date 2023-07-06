@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:anbardari.window"
         mc:Ignorable="d"
-        Title="UsersWindows" Height="650" Width="1200" WindowStyle="None" Background="Transparent" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="UsersWindows" Height="650" Width="1200" WindowStyle="None" Background="Transparent" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <Rectangle Fill="White" Height="650" Width="1200" HorizontalAlignment="Left" VerticalAlignment="Top" RadiusX="10" RadiusY="10"/>
         <Rectangle x:Name="Header" Height="100" Width="1200" HorizontalAlignment="Left" Fill="AliceBlue" VerticalAlignment="Top" RadiusX="10" RadiusY="10" MouseDown="Header_MouseDown"/>

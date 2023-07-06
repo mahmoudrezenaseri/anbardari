@@ -53,7 +53,7 @@ namespace anbardari
                  services.AddSingleton<UsersWindows>();
                  services.AddScoped<IUserRepository, UserRepository>();
 
-                 services.AddSingleton<Dispatcher>(_ => Current.Dispatcher);
+                 //services.AddSingleton<Dispatcher>(_ => Current.Dispatcher);
                  services.AddDbContext<MyDbContext>(
                      options =>
                      {

@@ -55,5 +55,11 @@ namespace anbardari.window
         {
             e.Row.Header = (e.Row.GetIndex() + 1).ToString();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            e.Cancel = true;
+        }
     }
 }
