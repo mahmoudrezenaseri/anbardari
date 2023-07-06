@@ -20,9 +20,9 @@ namespace anbardari.domain
         {
             List<User> scList = new()
             {
-                new User("michael", "jackson", 1234567),
-                new User("george", "michael", 1321546),
-                new User("elton", "john", 3451546),
+                new User("michael", "jackson","michael@gmail.com", "+33633654015"),
+                new User("george", "michael", "michael@gmail.com", "+33454654120"),
+                new User("elton", "john", "michael@gmail.com", "+33443654876"),
             };
 
             return scList;

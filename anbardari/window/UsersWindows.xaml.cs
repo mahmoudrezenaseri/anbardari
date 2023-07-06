@@ -1,5 +1,6 @@
 ﻿using anbardari.domain.Models;
 using anbardari.domain.Repository.UserRepository;
+using OrgNet.IntSoft.Identity.API.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +48,12 @@ namespace anbardari.window
             MaxWidth = 1200;
 
             List<User> users = await _userRepository.GetUsersAsync();
-            UserGrid.ItemsSource = users;
+            UserGrid.ItemsSource = users.ToUserVmList();
+        }
+
+        private void GridView_LoadingRow(object sender, DataGridRowEventArgs e)
+        {
+            e.Row.Header = (e.Row.GetIndex() + 1).ToString();
         }
     }
 }

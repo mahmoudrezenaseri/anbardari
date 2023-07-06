@@ -9,15 +9,15 @@
     <Grid>
         <Rectangle Fill="White" Height="650" Width="1200" HorizontalAlignment="Left" VerticalAlignment="Top" RadiusX="10" RadiusY="10"/>
         <Rectangle x:Name="Header" Height="100" Width="1200" HorizontalAlignment="Left" Fill="AliceBlue" VerticalAlignment="Top" RadiusX="10" RadiusY="10" MouseDown="Header_MouseDown"/>
-        <Image x:Name="Exit" HorizontalAlignment="Right" Width="50" Height="50" Margin="0,25,25,0" VerticalAlignment="Top" Source="/img/exit.png" MouseDown="Exit_MouseDown"/>
-        <Image HorizontalAlignment="Left" Width="50" Height="50" Margin="25,25,0,0" VerticalAlignment="Top" Source="/img/mottakere.png"/>
+        <Image x:Name="Exit" HorizontalAlignment="Right" Width="50" Height="50" Margin="0,25,25,0" VerticalAlignment="Top" Source="/Src/img/exit.png" MouseDown="Exit_MouseDown"/>
+        <Image HorizontalAlignment="Left" Width="50" Height="50" Margin="25,25,0,0" VerticalAlignment="Top" Source="/Src/img/mottakere.png"/>
         <Label Content="Users list" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" Margin="94,28,0,0" VerticalAlignment="Top"/>
 
-        <DataGrid x:Name="UserGrid" Width="1100" Height="350" VerticalAlignment="Center" Margin="0,0,0,60"></DataGrid>
+        <DataGrid x:Name="UserGrid" Width="1100" Height="350" VerticalAlignment="Center" Margin="0,0,0,60" LoadingRow="GridView_LoadingRow"></DataGrid>
         
         <Rectangle Height="150" Width="1200" HorizontalAlignment="Left" Fill="AliceBlue" VerticalAlignment="Bottom" RadiusX="10" RadiusY="10"/>
 
-        <Image HorizontalAlignment="Left" Width="30" Height="30" Margin="20,0,0,110"  VerticalAlignment="Bottom" Source="/img/search.ico"/>
+        <Image HorizontalAlignment="Left" Width="30" Height="30" Margin="20,0,0,110"  VerticalAlignment="Bottom" Source="/Src/img/search.ico"/>
         <Label Content="Search" FontSize="25" FontWeight="Bold" VerticalAlignment="Bottom" Margin="50,0,0,105" HorizontalAlignment="Left"/>
 
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Margin="0,0,0,70">

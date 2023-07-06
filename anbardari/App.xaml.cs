@@ -52,6 +52,8 @@ namespace anbardari
                  services.AddSingleton<LoginWindow>();
                  services.AddSingleton<UsersWindows>();
                  services.AddScoped<IUserRepository, UserRepository>();
+
+                 services.AddSingleton<Dispatcher>(_ => Current.Dispatcher);
                  services.AddDbContext<MyDbContext>(
                      options =>
                      {

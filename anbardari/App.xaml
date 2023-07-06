@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:anbardari"
              ShutdownMode="OnExplicitShutdown">
     <Application.Resources>
-        <ResourceDictionary Source="theme/bubblecreme.xaml" />
+        <ResourceDictionary Source="Src/theme/bubblecreme.xaml" />
     </Application.Resources>
 </Application>

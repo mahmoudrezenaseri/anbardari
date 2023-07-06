@@ -10,32 +10,32 @@
         <Ribbon>
             <Ribbon.QuickAccessToolBar>
                 <RibbonQuickAccessToolBar>
-                    <RibbonSplitButton SmallImageSource="/img/advanced.png">
-                        <RibbonSplitMenuItem x:Name="Aboutus" Header="About Us" ImageSource="/img/12.png" Click="Aboutus_Click"/>
-                        <RibbonSplitMenuItem x:Name="Contactus" Header="Contact Us" ImageSource="/img/13.png" Click="Contactus_Click"/>
-                        <RibbonSplitMenuItem x:Name="Exit" Header="Exit" ImageSource="/img/exit.png" Click="Exit_Click"/>
+                    <RibbonSplitButton SmallImageSource="/Src/img/advanced.png">
+                        <RibbonSplitMenuItem x:Name="Aboutus" Header="About Us" ImageSource="/Src/img/12.png" Click="Aboutus_Click"/>
+                        <RibbonSplitMenuItem x:Name="Contactus" Header="Contact Us" ImageSource="/Src/img/13.png" Click="Contactus_Click"/>
+                        <RibbonSplitMenuItem x:Name="Exit" Header="Exit" ImageSource="/Src/img/exit.png" Click="Exit_Click"/>
                     </RibbonSplitButton>
                 </RibbonQuickAccessToolBar>
             </Ribbon.QuickAccessToolBar>
             <Ribbon.ApplicationMenu>
                 <RibbonApplicationMenu>
-                    <RibbonApplicationMenuItem Name="CreateUser" Header="Create User" ImageSource="/img/44.png" Click="CreateUser_Click"/>
-                    <RibbonApplicationMenuItem Header="User Access" ImageSource="/img/advanced.png"/>
-                    <RibbonApplicationMenuItem Header="Change Password" ImageSource="/img/2.png"/>
-                    <RibbonApplicationMenuItem Header="System Components" ImageSource="/img/ajza.png"/>
-                    <RibbonApplicationMenuItem Header="Create Customer" ImageSource="/img/customer.png"/>
-                    <RibbonApplicationMenuItem Header="Backup" ImageSource="/img/server.png"/>
+                    <RibbonApplicationMenuItem Name="CreateUser" Header="Create User" ImageSource="/Src/img/44.png" Click="CreateUser_Click"/>
+                    <RibbonApplicationMenuItem Header="User Access" ImageSource="/Src/img/advanced.png"/>
+                    <RibbonApplicationMenuItem Header="Change Password" ImageSource="/Src/img/2.png"/>
+                    <RibbonApplicationMenuItem Header="System Components" ImageSource="/Src/img/ajza.png"/>
+                    <RibbonApplicationMenuItem Header="Create Customer" ImageSource="/Src/img/customer.png"/>
+                    <RibbonApplicationMenuItem Header="Backup" ImageSource="/Src/img/server.png"/>
                 </RibbonApplicationMenu>
             </Ribbon.ApplicationMenu>
 
             <RibbonTab Header="Products">
                 <RibbonGroup>
-                    <RibbonButton Label="Products" LargeImageSource="/img/product2.gif"/>
+                    <RibbonButton Label="Products" LargeImageSource="/Src/img/product2.gif"/>
                 </RibbonGroup>
                 <RibbonGroup Header="Product Section" Margin="0,10,0,10">
-                    <RibbonButton Label="Price" SmallImageSource="/img/13.png"/>
-                    <RibbonButton Label="Supply" SmallImageSource="/img/4.png"/>
-                    <RibbonButton Label="Sale Chart" SmallImageSource="/img/nemudar.png"/>
+                    <RibbonButton Label="Price" SmallImageSource="/Src/img/13.png"/>
+                    <RibbonButton Label="Supply" SmallImageSource="/Src/img/4.png"/>
+                    <RibbonButton Label="Sale Chart" SmallImageSource="/Src/img/nemudar.png"/>
                 </RibbonGroup>
             </RibbonTab>
             <RibbonTab Header="Sale">
