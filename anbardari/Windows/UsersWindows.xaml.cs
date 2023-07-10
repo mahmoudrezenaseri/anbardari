@@ -1,6 +1,6 @@
-﻿using anbardari.domain.Models;
+﻿using anbardari.application.Extensions;
+using anbardari.domain.Models;
 using anbardari.domain.Repository.UserRepository;
-using OrgNet.IntSoft.Identity.API.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace anbardari.window
+namespace anbardari.Windows
 {
     /// <summary>
     /// Interaction logic for UsersWindows.xaml

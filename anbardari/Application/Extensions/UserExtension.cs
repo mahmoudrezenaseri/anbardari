@@ -2,7 +2,7 @@
 using anbardari.domain.Models;
 using System.Collections.Generic;
 
-namespace OrgNet.IntSoft.Identity.API.Extensions
+namespace anbardari.application.Extensions
 {
     public static class UserExtension
     {

@@ -1,7 +1,6 @@
 ﻿using anbardari.domain;
 using anbardari.domain.Repository.UserRepository;
-using anbardari.window;
-using anbardari.windows;
+using anbardari.Windows;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,7 +28,8 @@ namespace anbardari
             MigrateDbContext(appHost);
 
             //LoginWindow loginWindow = appHost.Services.GetRequiredService<LoginWindow>();
-            var startupWindow = appHost.Services.GetRequiredService<MainWindow>();
+            //var startupWindow = appHost.Services.GetRequiredService<MainWindow>();
+            var startupWindow = appHost.Services.GetRequiredService<SignInWindow>();
             startupWindow.Show();
 
             base.OnStartup(e);
@@ -51,6 +51,7 @@ namespace anbardari
                  services.AddSingleton<MainWindow>();
                  services.AddSingleton<LoginWindow>();
                  services.AddSingleton<UsersWindows>();
+                 services.AddSingleton<SignInWindow>();
                  services.AddScoped<IUserRepository, UserRepository>();
 
                  //services.AddSingleton<Dispatcher>(_ => Current.Dispatcher);
