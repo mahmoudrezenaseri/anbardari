@@ -1,4 +1,5 @@
 ﻿using anbardari.domain.Repository.UserRepository;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,10 @@ namespace anbardari
     public partial class LoginWindow : Window
     {
         private readonly IUserRepository _userRepository;
-      
+        private readonly PaletteHelper paletteHelper = new PaletteHelper();
+        private bool IsDarkTheme { get; set; }
+
+
         public LoginWindow(IUserRepository userRepository)
         {
             InitializeComponent();
@@ -29,29 +33,39 @@ namespace anbardari
             _userRepository = userRepository;            
         }
 
-        private void Password_TextChanged(object sender, TextChangedEventArgs e)
+        private void ToggleButton_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void UserName_TextChanged(object sender, TextChangedEventArgs e)
-        {
+            ITheme theme = paletteHelper.GetTheme();
+            if (IsDarkTheme = theme.GetBaseTheme() == BaseTheme.Dark)
+            {
+                IsDarkTheme = false;
+                theme.SetBaseTheme(Theme.Light);
+            }
+            else
+            {
+                IsDarkTheme = false;
+                theme.SetBaseTheme(Theme.Dark);
+            }
+            paletteHelper.SetTheme(theme);
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
 
-        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
         }
 
-        private async void btnLogin_Click(object sender, RoutedEventArgs e)
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            //var users = await _userRepository.GetUsersAsync();
-            //MessageBox.Show(users.Count().ToString());
+            if (string.IsNullOrEmpty(txtUsername.Text))
+            {
+                MessageBox.Show("Please check Username!");
+                return;
+            }
         }
     }
 }
