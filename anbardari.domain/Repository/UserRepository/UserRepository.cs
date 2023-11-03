@@ -20,5 +20,32 @@ namespace anbardari.domain.Repository.UserRepository
         {
             return await _dbcontext.Users.ToListAsync();
         }
+
+        public async Task<List<User>> GetUsersAsync(string name, DateTime? from, DateTime? to)
+        {
+            IQueryable<User> query = _dbcontext.Users.AsQueryable();
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                query = query.Where(a => a.FirstName.Contains(name) || a.LastName.Contains(name));
+            }
+
+            if (from is not null)
+            {
+                query = query.Where(a => a.CreateAt >= from);
+            }
+
+            if (from is not null)
+            {
+                query = query.Where(a => a.CreateAt <= to);
+            }
+
+            int currentPage = 1;
+            int pageSize = 10;
+            int skip = (currentPage - 1) * pageSize;
+            List<User> result = await query.Skip(skip).Take(pageSize).ToListAsync();
+
+            return result;
+        }
     }
 }

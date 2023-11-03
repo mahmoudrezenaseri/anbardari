@@ -23,7 +23,7 @@
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Margin="0,0,0,70">
 
             <Label Content="Full Name" VerticalAlignment="Center"/>
-            <TextBox x:Name="Name" TextWrapping="Wrap" Text="TextBox" Width="120" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtName" TextWrapping="Wrap" Text="TextBox" Width="120" VerticalAlignment="Center"/>
 
             <Label Content="Date From" VerticalAlignment="Center" Margin="15,0,0,0"/>
             <DatePicker x:Name="DateFrom" Width="120" VerticalAlignment="Center"/>
@@ -34,7 +34,7 @@
             <RadioButton Content="Active" VerticalAlignment="Center" Margin="15,0,0,0" IsChecked="True"/>
             <RadioButton Content="Deactive" VerticalAlignment="Center" Margin="15,0,0,0"/>
 
-            <Button Content="Search" Width="110" FontWeight="Bold" VerticalAlignment="Stretch" Margin="15,0,0,0"/>
+            <Button x:Name="btnSearch" Content="Search" Width="110" FontWeight="Bold" VerticalAlignment="Stretch" Margin="15,0,0,0" Click="btnSearch_Click"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="45" Margin="0,0,0,10">
             <Button Content="Create User" FontWeight="Bold" Width="110"/>

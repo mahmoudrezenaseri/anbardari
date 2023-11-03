@@ -1,4 +1,5 @@
 ﻿using anbardari.domain.Repository.UserRepository;
+using anbardari.Windows;
 using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
@@ -22,15 +23,17 @@ namespace anbardari
     public partial class LoginWindow : Window
     {
         private readonly IUserRepository _userRepository;
-        private readonly PaletteHelper paletteHelper = new PaletteHelper();
+        private readonly MainWindow _mainWindow;
+        private readonly PaletteHelper paletteHelper = new ();
         private bool IsDarkTheme { get; set; }
 
 
-        public LoginWindow(IUserRepository userRepository)
+        public LoginWindow(IUserRepository userRepository, MainWindow mainWindow)
         {
             InitializeComponent();
 
-            _userRepository = userRepository;            
+            _userRepository = userRepository;
+            _mainWindow = mainWindow;
         }
 
         private void ToggleButton_Click(object sender, RoutedEventArgs e)
@@ -65,6 +68,18 @@ namespace anbardari
             {
                 MessageBox.Show("Please check Username!");
                 return;
+            }
+
+            string correctPassword = "admin1234";
+            if (string.IsNullOrEmpty(txtPassword.Password) || txtPassword.Password != correctPassword)
+            {
+                MessageBox.Show("Please check Password!");
+                return;
+            }
+
+            if (txtUsername.Text == "admin" && txtPassword.Password == correctPassword)
+            {
+                _mainWindow.Show();
             }
         }
     }

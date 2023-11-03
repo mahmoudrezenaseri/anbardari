@@ -61,5 +61,13 @@ namespace anbardari.Windows
             this.Visibility = Visibility.Hidden;
             e.Cancel = true;
         }
+
+        private async void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime? fromDate = DateFrom.SelectedDate;
+            DateTime? toDate = DateTo.SelectedDate;
+            List<User> users = await _userRepository.GetUsersAsync(txtName.Text, fromDate,toDate);
+            UserGrid.ItemsSource = users.ToUserVmList();
+        }
     }
 }

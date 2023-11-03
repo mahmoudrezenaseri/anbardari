@@ -17,9 +17,7 @@ namespace anbardari.domain.EntityConfigurations
             b.Property(a => a.BirthDate).IsRequired(false).HasMaxLength(150);
             b.Ignore(a => a.FullName);
 
-            b.Property(p => p.CreatedBy).IsRequired(false).HasMaxLength(50);
-            b.Property(p => p.ModifiedBy).IsRequired(false).HasMaxLength(50);
-            b.Property(p => p.CreatedAt);
+            b.Property(p => p.CreateAt);
             b.Property(p => p.ModifiedAt);
         }
     }

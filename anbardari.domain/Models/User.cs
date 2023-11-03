@@ -18,16 +18,14 @@ namespace anbardari.domain.Models
         public string? BirthDate { get; set; }
         public string? About { get; set; }
 
-        public string? CreatedBy { get; }
-        public string? ModifiedBy { get; }
-        public long? CreatedAt { get; }
-        public long? ModifiedAt { get; }
+        public DateTime? CreateAt { get; }
+        public DateTime? ModifiedAt { get; }
 
         public string FullName
         {
             get
             {
-                return string.Concat(FirstName, LastName);
+                return string.Concat(FirstName," ", LastName);
             }
         }
     }

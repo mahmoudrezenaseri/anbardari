@@ -28,6 +28,7 @@ namespace anbardari
             MigrateDbContext(appHost);
 
             LoginWindow startupWindow = appHost.Services.GetRequiredService<LoginWindow>();
+            //DashboardWindow startupWindow = appHost.Services.GetRequiredService<DashboardWindow>();
             //var startupWindow = appHost.Services.GetRequiredService<MainWindow>();
             startupWindow.Show();
 
@@ -47,9 +48,10 @@ namespace anbardari
              .ConfigureAppConfiguration((hostBuilderContext, configurationBuilder) => { })
              .ConfigureServices((hostContext, services) =>
              {
-                 services.AddSingleton<MainWindow>();
-                 services.AddSingleton<LoginWindow>();
-                 services.AddSingleton<UsersWindows>();
+                 services.AddScoped<MainWindow>();
+                 services.AddScoped<LoginWindow>();
+                 services.AddScoped<UsersWindows>();
+                 services.AddScoped<DashboardWindow>();
                  services.AddScoped<IUserRepository, UserRepository>();
 
                  //services.AddSingleton<Dispatcher>(_ => Current.Dispatcher);

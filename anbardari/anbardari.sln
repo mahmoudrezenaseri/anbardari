@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "anbardari", "anbardari.csproj", "{1FDD55DE-E698-4F6E-8F2C-7620377F8393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "anbardari.domain", "..\anbardari.domain\anbardari.domain.csproj", "{1031793D-F23A-4ED1-96A3-DF87C9209CD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "anbardari.domain", "..\anbardari.domain\anbardari.domain.csproj", "{1031793D-F23A-4ED1-96A3-DF87C9209CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "anbardari.AcceptanceTests", "..\anbardari.AcceptanceTests\anbardari.AcceptanceTests.csproj", "{188BB4B7-23D9-4FD1-971D-FAF91972E211}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1031793D-F23A-4ED1-96A3-DF87C9209CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1031793D-F23A-4ED1-96A3-DF87C9209CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1031793D-F23A-4ED1-96A3-DF87C9209CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{188BB4B7-23D9-4FD1-971D-FAF91972E211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188BB4B7-23D9-4FD1-971D-FAF91972E211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188BB4B7-23D9-4FD1-971D-FAF91972E211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188BB4B7-23D9-4FD1-971D-FAF91972E211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

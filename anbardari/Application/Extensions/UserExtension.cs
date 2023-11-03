@@ -23,6 +23,7 @@ namespace anbardari.application.Extensions
                 Id = item.Id,
                 UserName = item.UserName,
                 FirstName = item.FirstName,
+                LastName = item.LastName,
                 PhoneNumber = item.PhoneNumber,
                 Email = item.Email,
                 BirthDate = item.BirthDate,
